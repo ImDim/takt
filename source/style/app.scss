@@ -1,0 +1,21 @@
+@import 'adjustments.scss';
+@import "plugins/hamburgers/hamburgers.scss";
+@import "sections/header.scss";
+@import 'sections/guide.scss';
+@import 'sections/controller.scss';
+@import 'sections/feedback.scss';
+
+
+
+body {
+    background-color: #1E1E1E;
+}
+
+// main adjustments
+#particles-js {
+	height: 99.5%;
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 100%;
+}

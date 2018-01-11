@@ -1,0 +1,102 @@
+.controller {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    .container {
+        justify-content: center;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+}
+
+.controller__panel {
+    display: flex;
+    flex-direction: row;
+    height: 195px;
+    width: 70%;
+    justify-content: space-between;
+}
+
+.controller__icons-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+
+.controller__column-track {
+    width: 65px;
+    height: 35px;
+    background-color: #A8A8A8;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.controller__column-choise  {
+    width: 65px;
+    height: 65px;
+    background-color: #787878;
+    cursor: pointer;
+    margin-bottom: 10px;
+        &:last-child {
+            margin-bottom: 0px;
+        }
+}
+
+.controller__icons {
+    width: 23px;
+    cursor: pointer;
+}
+
+.controller__icons-play {
+    height: 35px;
+    background: url('/assets/img/icons/play.png') no-repeat center;
+    margin-bottom: 20px;
+}
+
+.controller__icons-checked {
+    height: 65px;
+    background: url('/assets/img/icons/checked.png') no-repeat center;
+}
+
+.controller__icons-cross {
+    height: 65px;
+    background: url('/assets/img/icons/cross.png') no-repeat center;
+    
+}
+
+.controller__result {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 62%;
+    margin-top: 115px;
+}
+
+.controller__result-level  {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.controller__result-round {
+    border: 5px solid white;
+    border-radius: 50%;
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    align-content: center;
+}
+
+.controller__result-rate {
+    font-size: 88px;
+    color: white;
+}
+
+
+  

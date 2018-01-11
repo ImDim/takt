@@ -1,0 +1,37 @@
+{
+  "name": "pozdny",
+  "version": "1.0.0",
+  "author": "a.kalin",
+  "license": "ISC",
+  "scripts": {
+    "postinstall": "bower install"
+  },
+  "devDependencies": {
+    "browser-sync": "*",
+    "del": "*",
+    "gulp": "git+https://git@github.com/gulpjs/gulp.git#4.0",
+    "gulp-autoprefixer": "*",
+    "gulp-cheerio": "*",
+    "gulp-concat": "*",
+    "gulp-concat-css": "*",
+    "gulp-css-unit": "*",
+    "gulp-csso": "*",
+    "gulp-eslint": "*",
+    "gulp-load-plugins": "*",
+    "gulp-notify": "*",
+    "gulp-pug": "*",
+    "gulp-replace": "*",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "*",
+    "gulp-svg-sprite": "*",
+    "gulp-svgmin": "*",
+    "gulp.spritesmith": "*"
+  },
+  "dependencies": {
+    "bower": "^1.8.2",
+    "hamburgers": "*",
+    "normalize.css": "*"
+  },
+  "main": "gulpfile.js",
+  "description": ""
+}

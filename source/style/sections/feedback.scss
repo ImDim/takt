@@ -1,0 +1,87 @@
+.feedback {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.container--feedback {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.form-title__wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+
+.form-title {
+    font-size: 22px;
+    background: linear-gradient(to right, #8F8278 0%, #FBAB6E 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-content: center;
+    align-items: center;
+    label, input {
+        color: #DEDEDE;
+    }
+}
+
+.form__fields {
+    display: flex;
+    flex-direction: row;
+}
+
+.form__wrap-labels, .form__wrap-inputs {
+    display: flex;
+    flex-direction: column;
+    // justify-content: center;
+    // align-items: center;
+    align-content: center;
+        input {
+           width: 100%;
+           background: transparent;
+           border: none;
+        }
+        input, label {
+            margin-bottom: 10px;
+        }
+}
+
+.form__wrap-labels  {
+    margin-right: 20px;
+}
+
+.submit__btn {
+    margin-top: 50px;
+    width: 135px;
+    height: 70px;
+    cursor: pointer;
+    border: none;
+    background: url('/assets/img/icons/submit.png') no-repeat center;
+    transition: all .3s;
+        &:hover {
+            background: url('/assets/img/icons/submit-color.png') no-repeat center;
+        }
+        &:active {
+            transform: translateY(2px);
+        }
+}
+
+.controller__result-round--form {
+    width: 80px;
+    height: 80px;
+}
+
+.controller__result-rate--form {
+    font-size: 38px;
+}

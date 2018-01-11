@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible', content='ie=edge')
+    title Document
+    link(rel='stylesheet' href='assets/css/foundation.css')
+    link(rel='stylesheet' href='assets/css/app.css')
+    script(src='assets/js/foundation.js' defer)
+    link(href='https://fonts.googleapis.com/css?family=Rubik', rel='stylesheet')
+  body
+    #particles-js
+    .wrapper
+      .maincontent
+        header.header
+          .sound
+          .hamburger-wrap
+            button.hamburger.hamburger--collapse(type='button')
+              span.hamburger-box
+                span.hamburger-inner
+        section.title
+          h1.title__text |  Насколько музыкален твой слух ?  |
+          .title__arrow.bounce
+        section.guide
+          .container
+            ul.guide__list
+              li.guide__item
+                span.guide__item-digit.guide__item-digit--first 1
+                span.guide__item-text запусти аудио-клип:
+                .guide__item-icon.icon-play
+              li.guide__item
+                span.guide__item-digit 2
+                span.guide__item-text проанализируй две версии каждого клипа
+              li.guide__item
+                span.guide__item-digit 3
+                span.guide__item-text сделай выбор, нажав:
+                .guide__item-container
+                  .guide__item-wrap
+                    .guide__item-icon.icon-checked
+                    span.guide__item-text - одинаковые мелодии
+                  .guide__item-wrap
+                    .guide__item-icon.icon-cross
+                    span.guide__item-text - разные
+            .title__arrow.bounce
+        section.controller
+          .container
+            .controller__panel
+              .controller__icons-column
+                .controller__icons-play.controller__icons(onclick='beginTest()')
+                .controller__icons-checked.controller__icons
+                .controller__icons-cross.controller__icons
+              
+            .controller__result
+              span.controller__result-level |  уровень твоего музыкального слуха:
+              .controller__result-round
+                span.controller__result-rate 87
+            .title__arrow.bounce
+        section.feedback
+          .container.container--feedback
+            .form-title__wrap
+              span.form-title ЗАПОЛНИ ФОРМУ УЧАСТНИКА  |  ОТПРАВЬ СВОЙ РЕЗУЛЬТАТ
+            form.form(action='#')
+              .form__fields
+                .form__wrap-labels
+                  label(for='name') ИМЯ
+                  label(for='surname') ФАМИЛИЯ
+                  label(for='email') EMAIL
+                .form__wrap-inputs
+                  input#name(type='text', placeholder='_')
+                  input#surname(type='text', placeholder='_')
+                  input#email(type='email', placeholder='_')
+                .controller__result-round.controller__result-round--form
+                  span.controller__result-rate.controller__result-rate--form 87
+              input.submit__btn(type='submit', value='')
+    script(src='assets/js/plugins.js' defer)
+    script(src='assets/js/app.js' defer)
+

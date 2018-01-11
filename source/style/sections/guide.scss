@@ -1,0 +1,68 @@
+.guide  {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.guide__list  {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.guide__item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.guide__item-digit  {
+    font-size: 56px;
+    background: linear-gradient(to bottom, #D69376 0%, rgb(180, 96, 65) 100%);
+	-webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-right: 10px;
+}
+
+.guide__item-digit--first {
+    margin-right: 18px;
+}
+
+.guide__item-text   {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #ffffff;
+    opacity: .7;
+    margin-right: 5px;
+}
+
+.guide__item-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.icon-play  {
+    background: url('/assets/img/icons/play-yellow.png') no-repeat center;
+}
+
+.icon-checked  {
+    background: url('/assets/img/icons/checked-color.png') no-repeat center;
+    margin-right: 5px;
+}
+
+.icon-cross  {
+    background: url('/assets/img/icons/cross-red.png') no-repeat center;
+    margin-right: 5px;
+}
+
+.guide__item-container  {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+}
+
+.guide__item-wrap {
+    display: flex;
+    flex-direction: row;
+}
