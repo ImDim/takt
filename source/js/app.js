@@ -62,7 +62,7 @@ if( !Array.prototype.equals ) {
     0,
     1
 
-	], link = '/assets/tracks/track', answers = [], trackId = 0, track;
+	], link = '/assets/tracks/track', answers = [], trackId = 0, track, testStarted = false;
   
   //Трэк загрузился
   function trackLoaded() {
@@ -130,6 +130,7 @@ if( !Array.prototype.equals ) {
     if( trackId >= questions.length ) {
 
       testEnded();
+      testStarted = false;
 
     //Продолжаем тест
     } else {
@@ -166,8 +167,10 @@ if( !Array.prototype.equals ) {
 //Начинаем тест
 function beginTest() {
 
-    play(trackId);
-    console.info(`fn beginTest: начинаем тест`);
+  testStarted = true;
+
+  play(trackId);
+  console.info(`fn beginTest: начинаем тест`);
     
 }
 
@@ -181,21 +184,21 @@ function getAnswer (answer) {
     
 };
 
+
+
 $(document).on('click', '.controller__column', function(e){
 
   
   let $this = $(this);
   let thisId = $this.data("column");
 
-  if( thisId !== trackId ) return false;
+  if( thisId !== trackId || !testStarted ) return false;
   if( track ) track.pause();
 
   let $answer = $(e.target).closest('.controller__column-choise');
 
-  
-
   //Отвечаем
-  if( $answer.data("answer") === 'true' ) {
+  if( $answer.data("answer") === true ) {
 
     getAnswer(1);
 
